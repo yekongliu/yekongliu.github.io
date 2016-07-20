@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/base.css" rel="stylesheet" />
+		<style>
+			body {
+				background: #00FFFF;
+			}
+			
+			nav {
+				height: 50px;
+				width: 100%;
+				background: #fff;
+			}
+			
+			nav a {
+				font-size: 20px;
+				line-height: 50px;
+				color: #000;
+				margin: 0 20px;
+				padding: 20px;
+			}
+			
+			nav a:hover {
+				background: #0000FF;
+			}
+			
+			a:first-child {
+				margin-left: 300px;
+			}
+			
+			header {
+				margin: 50px auto;
+				height: 500px;
+				background: url(img/conact_me.png) no-repeat;
+				background-size: 100% 500px;
+				width: 70%;
+				border: 1px solid #ccc;
+			}
+			
+			.header_left {
+				width: 40%;
+				height: 500px;
+				float: left;
+				position: relative;
+			}
+			
+			.header_left img {
+				height: 192px;
+				width: 144px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -72px;
+				margin-top: -96px;
+			}
+			
+			.header_right {
+				width: 60%;
+				height: 500px;
+				float: left;
+				position: relative;
+			}
+			
+			.motto {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -150px;
+				margin-left: -150px;
+				width: 300px;
+				height: 300px;
+				border: 1px solid #000;
+			}
+			
+			.motto h1 {
+				height: 80px;
+				line-height: 80px;
+				font-size: 25px;
+				font-weight: bold;
+			}
+			
+			.personal p,
+			.motto p {
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.personal {
+				height: 500px;
+				width: 70%;
+				margin: 50px auto;
+				background: #fff;
+			}
+			
+			.lines {
+				height: 50px;
+				width: 100%;
+				background: #fff;
+			}
+			
+			.personal h1 {
+				height: 100px;
+				line-height: 100px;
+				font-size: 35px;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			.personal p,
+			.personal span {
+				height: 50px;
+				line-height: 60px;
+				text-align: left;
+				font-size: 25px;
+				margin-left: 100px;
+			}
+			/*个人爱好-start*/
+			
+			.hobby {
+				height: 300px;
+				width: 70%;
+				margin: 50px auto;
+				background: #fff;
+			}
+			
+			.hobby h1 {
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				font-weight: bold;
+				font-size: 35px;
+			}
+			
+			.hobby div {
+				height: 200px;
+				line-height: 100px;
+				font-size: 20px;
+				text-indent: 2em;
+				padding: 0 20px;
+			}
+			
+			.w_e h2 {
+				font-size: 20px;
+				line-height: 100px;
+				height: 100px;
+				text-align: center;
+			}
+			
+			.w_e p {
+				height: 50px;
+				line-height: 50px;
+				padding: 0 20px;
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			.contact_me {
+				height: 400px;
+				width: 70%;
+				margin: 50px auto;
+				background: #fff;
+			}
+			
+			.contact_me h1 {
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				font-size: 50px;
+			}
+			
+			.contact_me p {
+				height: 100px;
+				line-height: 100px;
+				padding: 0 20px;
+				font-size: 30px;
+			}
+			
+			.contact_z {
+				height: 300px;
+				width: 100%
+			}
+			
+			.left,
+			.right {
+				width: 50%;
+				height: 300px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="#personal_a">个人介绍</a>
+			<a href="#hobby_a">个人爱好</a>
+			<a href="#contact_mea">联系方式</a>
+			<a href="http://127.0.0.1:8020/jixiaopeng/index.html">返回首页</a>
+		</nav>
+		<div class="hide1"></div>
+		<div class="hide2"></div>
+		<header class="clearfix">
+			<div class="header_left"><img src="img/personal/person.jpg"></div>
+			<div class="header_right">
+				<div class="motto">
+					<h1>座右铭(my motto)</h1>
+					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
+					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
+					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
+				</div>
+			</div>
+		</header>
+		<div class="lines"></div>
+
+		<section class="personal" id="personal_a">
+			<h1>个人介绍</h1>
+			<p><span>我是web前端开发工程师:</span>姬小鹏</p>
+			<p><span>毕业学校：</span>甘肃农业大学</p>
+
+			<p><span>TEL:</span>18294427876</p>
+			<p><span>E-mail:</span>1558948962@qq.com</p>
+			<p><span>到岗时间：</span>随时可以上岗</p>
+		</section>
+		<div class="lines"></div>
+		<section class="hobby" id="hobby_a">
+			<h1>My Interests</h1>
+			<div>我是一名web前端开发工程师,我是比较喜欢关注和了解互联网最新科技技术以及动态。对于娱乐方面；比较喜欢看篮球，足球方面的体育赛事，喜欢到处去旅行游玩。</div>
+		</section>
+
+		<div class="lines"></div>
+		<section class="contact_me" id="contact_mea">
+			<h1>contact me</h1>
+			<div class="contact_z">
+				<div class="left fl">
+					<p>tel:18294427876</p>
+					<p>QQ:1558948962</p>
+					<p>E-mail:1558948962@qq.com</p>
+				</div>
+				<div class="right fl"><img src="img/html5/1.jpg" alt="" /></div>
+			</div>
+			<p></p>
+		</section>
+
+	</body>
+
+</html>

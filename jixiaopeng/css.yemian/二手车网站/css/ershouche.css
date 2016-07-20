@@ -1,0 +1,251 @@
+.box {
+  width: 548px;
+  height: 1089px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  padding: 0 20px 0 12px;
+}
+.banner {
+  width: 548px;
+  height: 50px;
+  position: relative;
+}
+.icon-1 {
+  background: url(../img/ss.jpg) no-repeat;
+  width: 163px;
+  height: 50px;
+}
+.icon-2 {
+  width: 21px;
+  height: 24px;
+  background: url(../img/sa.jpg) no-repeat;
+  position: absolute;
+  right: 25px;
+  top: 12px;
+}
+.icon-3 {
+  line-height: 50px;
+}
+.main {
+  width: 320px;
+  height: 960px;
+  margin: 0 130px;
+}
+.nav {
+  width: 320px;
+  height: 150px;
+  background: url(../img/we.png);
+  position: relative;
+}
+input {
+  width: 264px;
+  height: 36px;
+  border: 0;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  outline: none;
+  padding-left: 36px;
+  background: #fff;
+}
+.icon-4 {
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  background: url(../img/search_ico.gif);
+}
+.logo {
+  width: 320px;
+  height: 70px;
+}
+.logo li {
+  width: 25%;
+  height: 70px;
+  float: left;
+  border-right: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+.che {
+  width: 320px;
+  height: 115px;
+  margin-top: 10px;
+  background: #fff;
+}
+.che .left {
+  height: 99px;
+  width: 144px;
+  padding: 15px 0 0 15px;
+  border-right: 1px solid #dfdfdf;
+}
+.che .right {
+  height: 115px;
+  width: 160px;
+}
+.che .right .top {
+  width: 145px;
+  height: 41px;
+  padding: 15px 0 0 15px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.che .right .bottom {
+  width: 145px;
+  height: 41px;
+  padding: 15px 0 0 15px;
+}
+.che h3 {
+  font-size: 15px;
+}
+.che p {
+  color: #cacaca;
+}
+.price {
+  width: 320px;
+  height: 126px;
+  margin-top: 10px;
+  background: #fff;
+}
+.price h3 {
+  height: 40px;
+  width: 303px;
+  line-height: 40px;
+  padding-left: 17px;
+  position: relative;
+  font-size: 15px;
+}
+.price h3 .icon-5 {
+  width: 5px;
+  height: 22px;
+  background: url(../img/tt.jpg);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.price ul {
+  width: 320px;
+  height: 86px;
+}
+.price ul li {
+  height: 43px;
+  width: 25%;
+  float: left;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 43px;
+}
+.pinpai {
+  width: 320px;
+  height: 198px;
+  background: #fff;
+}
+.pinpai h3 {
+  width: 303px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 17px;
+  position: relative;
+  font-size: 15px;
+}
+.pinpai h3 .icon-6 {
+  width: 6px;
+  height: 21px;
+  background: url(../img/ddrt_03.gif);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.pinpai ul {
+  width: 320px;
+  height: 158px;
+}
+.pinpai ul li {
+  width: 25%;
+  height: 70px;
+  float: left;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+}
+.pinpai ul li a {
+  display: block;
+}
+.chexing {
+  width: 320px;
+  height: 128px;
+  background: #fff;
+}
+.chexing h3 {
+  width: 303px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 17px;
+  position: relative;
+  font-size: 15px;
+}
+.chexing h3 .icon-7 {
+  width: 6px;
+  height: 19px;
+  background: url(../img/ddrt_29.gif);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.chexing ul {
+  width: 320px;
+  height: 88px;
+}
+.chexing ul li {
+  width: 25%;
+  height: 44px;
+  float: left;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 44px;
+}
+.tua {
+  width: 320px;
+  height: 70px;
+  margin-top: 10px;
+}
+.tua li {
+  float: left;
+}
+.tub {
+  width: 320px;
+  height: 80px;
+}
+.p-1 {
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+.p-1 a {
+  padding: 0 10px;
+  border-right: 2px solid #dfdfdf;
+  line-height: 50px;
+}
+.p-1 .a-a {
+  border-right: 0;
+}
+.p-2 {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+.p-2 a span {
+  color: #f00;
+}

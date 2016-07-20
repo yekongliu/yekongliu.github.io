@@ -1,0 +1,407 @@
+ body {
+ 	background: url(../img/-002.png);
+ 	
+ }
+ 
+ #welcome {
+ 	position: relative;
+ 	z-index: 100000;
+ 	display: block;
+ 	width: 100%;
+ 	height: 1024px;
+ 	background: #0ff;
+ }
+ 
+ .theme {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 35%;
+ 	font-size:50px;
+ 	text-align: center;
+ 	width: 100%;
+ 	height: 50px;
+ 	 text-shadow:-10px -10px 50px #FFCCCC;
+ 	font-family: "arial, helvetica, sans-serif";
+ }
+ 
+ #weehools {
+ 	height: 5px;
+ 	width: 0%;
+ 	background: #fff;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 40%;
+ }
+ 
+ .box {
+ 	width: 1366px;
+ 	display: none;
+ 	height: 100%;
+ 	position: relative;
+ }
+ 
+ #colock {
+ 	width: 200px;
+ 	margin-left: 100px;
+ }
+ 
+ .white {
+ 	color: #000;
+ }
+ 
+ #colock li {
+ 	float: left;
+ 	font-size: 30px;
+ 	width: 24px;
+ 	height: 35px;
+ 	overflow: hidden;
+ 	position: relative;
+ }
+ 
+ #colock img {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ }
+ 
+ #icon {
+ 	position: fixed;
+ 	right: 10px;
+ 	bottom: 10px;
+ 	display: none;
+ 	border-radius: 50%;
+ 	width: 34px;
+ 	height: 34px;
+ }
+ /*headr-start*/
+ 
+ .header {
+ 	height: 668px;
+ 	width: 1366px;
+ 	overflow: hidden;
+ 	background: url(../img/beijng.jpg);
+ 	background-size: 1366px 668px;
+ }
+ 
+ .personal {
+ 	height: 768px;
+ 	position: relative;
+ }
+ 
+ .web {
+ 	height: 50px;
+ 	width: 450px;
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 60%;
+ 	margin-left: -225px;
+ }
+ 
+ .personal .left {
+ 	width: 450px;
+ 	height: 2px;
+ 	left: -500px;
+ 	top: -2px;
+ }
+ 
+ .personal .right {
+ 	width: 450px;
+ 	height: 2px;
+ 	right: -500px;
+ 	bottom: -2px;
+ }
+ 
+ .personal .top {
+ 	width: 2px;
+ 	height: 50px;
+ 	right: -2px;
+ 	top: -100px;
+ }
+ 
+ .personal .bottom {
+ 	width: 2px;
+ 	height: 50px;
+ 	left: -2px;
+ 	bottom: -100px;
+ }
+ 
+ .personal i {
+ 	opacity: 0;
+ 	transition: all 0.3s ease 0s;
+ 	transition-property: all;
+ 	transition-duration: 0.3s;
+ 	transition-timing-function: ease;
+ 	transition-delay: 0s;
+ 	position: absolute;
+ 	background: #fff;
+ }
+ 
+ .web:hover .left {
+ 	opacity: 1;
+ 	left: 0px;
+ }
+ 
+ .web:hover .right {
+ 	opacity: 1;
+ 	width: 450px;
+ 	right: -2px;
+ }
+ 
+ .web:hover .top {
+ 	opacity: 1;
+ 	height: 50px;
+ 	top: 0px;
+ }
+ 
+ .web:hover .bottom {
+ 	opacity: 1;
+ 	height: 50px;
+ 	bottom: 0px;
+ }
+ 
+ .personal p {
+ 	font-size: 35px;
+ 	color: #fff;
+ 	font-weight: bold;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	border: 1px solid rgba(255, 255, 255, 0.3);
+ }
+ 
+ .personal p span {
+ 	font-size: 35px;
+ }
+ 
+ .personal .head {
+ 	width: 200px;
+ 	height: 200px;
+ 	border-radius: 50%;
+ 	overflow: hidden;
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 30%;
+ 	margin-left: -100px;
+ 	border: 10px solid rgba(255, 255, 255, 0.2);
+ 	transition-property: all;
+ 	transition-duration: 0.3s;
+ 	transition-timing-function: ease-out;
+ 	transition-delay: 0s;
+ }
+ 
+ .personal .head:hover {
+ 	transform: rotateY(360deg);
+ }
+ 
+ .personal .head img {
+ 	width: 100%;
+ }
+ 
+ .nav_head {
+ 	height: 50px;
+ 	float: right;
+ 	width: 650px;
+ 	position: relative;
+ }
+ 
+ .nav_head li {
+ 	height: 50px;
+ 	float: left;
+ 	width: 130px;
+ 	text-align: center;
+ }
+ 
+ .nav_head li a {
+ 	font-size: 25px;
+ 	font-weight: bold;
+ 	line-height: 50px;
+ 	color: #000;
+ }
+ 
+ .nav_head .block {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	background: blue;
+ 	z-index: -5;
+ 	opacity: 0.5;
+ }
+ 
+ #nav_nav {
+ 	height: 50px;
+ 	width: 100%;
+ }
+ 
+ #head_hide {
+ 	height: 50px;
+ 	width: 100%;
+ 	display: none;
+ }
+ /*.nav_head a:hover {
+				
+				background: red;
+				border-radius: 10%;
+			}*/
+ /*.nav_head .hover{background:url(../img/hover.png) no-repeat; position:absolute;left:-10px; top:44px; height:76px; width:96px;}*/
+ /*技能start*/
+ 
+ .skills {
+ 	height: 700px;
+ 	width: 1366px;
+ 	position: relative;
+ }
+ 
+ .skills_pic {
+ 	height: 50px;
+ 	background: url(../img/map-bro.png) repeat-x;
+ }
+ 
+ .skills h1 {
+ 	margin-top: 10px;
+ 	height: 100px;
+ 	width: 100%;
+ 	font-size: 40px;
+ 	font-family: 'Abril Fatface', cursive;
+ 	background: #ccc;
+ 	text-shadow:5px 5px 5px #fff;
+ 	line-height: 100px;
+ 	text-align: center;
+ 	font-weight: bold;
+ }
+ 
+ .skills_works {
+ 	height: 550px;
+ 	background: transparent url(../img/bg.jpg) no-repeat fixed;
+ 	background-size: cover;
+ 	position: relative;
+ }
+ 
+ .lines {
+ 	position: absolute;
+ 	left: 80px;
+ 	top: 45px;
+ }
+ 
+ .skill_works .method {
+ 	height: 300px;
+ 	width: 100%;
+ 	border-top: 1px solid #fff;
+ }
+ 
+ .method li {
+ 	float: left;
+ 	width: 200px;
+ 	height: 200px;
+ 	overflow: hidden;
+ 	margin: 50px 60px;
+ 	animation: don 8s infinite ease-in;
+ }
+ 
+ @keyframes don {
+ 	0% {
+ 		transform: translateY(0deg);
+ 	}
+ 	25% {
+ 		transform: rotateY(90deg);
+ 	}
+ 	50% {
+ 		transform: rotateY(180deg);
+ 	}
+ 	100% {
+ 		transform: rotateY(360deg);
+ 	}
+ }
+ 
+ .skill_resume {
+ 	height: 250px;
+ 	width: 100%;
+ }
+ 
+ .skill_resume li {
+ 	height: 250px;
+ 	width: 250px;
+ 	float: left;
+ 	margin: 0 40px;
+ }
+ 
+ .skill_resume li a {
+ 	display: block;
+ 	margin-left: 20px;
+ 	line-height: 60px;
+ 	font-size: 15px;
+ 	font-family: "arial, helvetica, sans-serif";
+ 	color: rgba(255, 255, 255, 0.8);
+ 	text-shadow: -3px -3px 3px #000;
+ }
+ 
+ .personal_style_icon {
+ 	background: url(../img/about_me.con.jpg) repeat-x;
+ 	height: 50px;
+ }
+ 
+ .about_me {
+ 	background: url(../img/about-me.png);
+ 	height: 600px;
+ 	position: relative;
+ }
+ 
+ .opabox {
+ 	width: 100%;
+ 	height: 100%;
+ 	background: rgba(0, 0, 0, 0.5);
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	z-index: 8;
+ 	;
+ }
+ 
+ .about_mea {
+ 	position: relative;
+ 	z-index: 10;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ 
+ .about_me h1 {
+ 	height: 150px;
+ 	line-height: 150px;
+ 	font-size: 40px;
+ 	margin-left: 100px;
+ 	font-family: 'Abril Fatface', cursive;
+ 	color: #fff;
+ 	text-shadow:5px 5px 5px #fff;
+ }
+ 
+ .about_me p {
+ 	height: 100px;
+ 	line-height: 100px;
+ 	font-size: 30px;
+ 	margin-left: 100px;
+ 	color: #fff;
+ 	text-shadow: 5px 5px 5px #433B4F;
+ }
+ 
+ .contact_me {
+ 	height: 100px;
+ 	width: 1366px;
+ 	line-height: 100px;
+ 	background: #ccc;
+ }
+ 
+ .contact_me h1 {
+ 	float: left;
+ 	font-size: 25px;
+ 	color: #fff;
+ 	padding-left: 20px;
+ }
+ 
+ .contact_me a {
+ 	float: left;
+ 	padding: 0 20px;
+ 	font-size: 20px;
+ 	color: #fff;
+ }
+ 
+ .footer_prev {
+ 	height: 50px;
+ }

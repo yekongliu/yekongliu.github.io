@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+.head{width:100%;height:50px;background:#f8f7f7;}
+   .head-in{width:1000px;height:44px;margin:0 auto;}
+      .company{width:86px;height:36px;background:url(img/logo_white.png) no-repeat -4px -5px;border-right:1px solid #cecece;padding-right:13px;margin-top:6px;}
+	  .h-con1{height:39px;padding-top:11px;border-right:1px solid #cecece;}
+	     .h-con1 li{width:82px;height:24px;margin-left:4px;}
+	     .h-tip1{width:24px;height:24px;background:url(img/cyou_sprite.png) no-repeat -139px 0;}
+		 .h-tip2{width:24px;height:24px;background:url(img/cyou_sprite.png) no-repeat -189px 0;}
+		 .h-tip3{width:24px;height:24px;background:url(img/cyou_sprite.png) no-repeat 0 -104px;}
+		 .h-exp{font-size:12px;color:#4a4a4a;padding-left:7px;padding-top:5px;margin-right:3px;}
+	  .h-con2{height:39px;}
+	     .h-con2 li{height:39px;padding:11px 25px 0 25px;border-right:1px solid #cecece;}
+	     .h-arr{width:7px;height:4px;background:url(img/cyou_sprite.png) no-repeat -206px -148px;margin-top:10px;}
+
+.m1-line{width:100%;height:5px;background:url(img/5.jpg) no-repeat;} 
+.main-bbg{width:100%;height:2472px;background:#1b1924;}
+.main-picbg{width:100%;height:1605px;background:url(img/con_bg.jpg) no-repeat center 0;}
+   .main{width:1000px;margin:0 auto;position:relative;}	
+/*main1======================================*/   
+      .main1{width:1000px;height:551px;}
+      .m1-bg{width:1000px;height:551px;background:url(img/header_main.jpg) no-repeat center 0;position:absolute;left:0;top:0;}
+	  .m1-head{width:1000px;height:107px;position:absolute;left:0;top:0;}
+	     .logo{width:190px;height:100px;background:url(img/logo.gif) no-repeat;}
+		 .m1-head ul li{float:left;height:73px;padding-left:8px;padding-right:8px;text-align:center;padding-top:34px;position:relative;}
+		 .m1-head ul li a{color:#bebebe;font-family:'microsoft yahei';}
+		 .m1-head ul li a h2{font-size:15px;}
+		 .m1-head ul li a h3{font-size:7px;height:7px;}
+         .news-btn,.newhands-btn,.vision-btn{width:86px;height:110px;background:url(img/nav_new_hover.jpg) no-repeat;position:absolute;left:0;top:0;display:none;}
+		 .news-btn a,.vision-btn a{display:block;font-size:12px;color:#FC0;background:url(img/top_btn.png) no-repeat 15% 50%;line-height:22px;vertical-align:middle;margin-top:20px;}
+         .newhands-btn a{display:block;font-size:12px;color:#CCC;background:url(img/top_btn.png) no-repeat 15% 50%;line-height:22px;vertical-align:middle;}
+  
+  .top-con1:hover{border-bottom:3px solid #FF9;} 
+  .top-con2:hover .news-btn{display:block;}
+  .top-con2:hover .newhands-btn{display:block;}
+  .top-con2:hover .vision-btn{display:block;}
+  .news-btn a:hover{color:#FC0;text-decoration:underline;}
+  .newhands-btn a:hover{color:#FC0;text-decoration:underline;}
+  .vision-btn a:hover{color:#FC0;text-decoration:underline;}     
+	  
+.zan{width:35px;height:122px;background:url(img/dianzan.png);position:fixed;left:0;top:50%;margin-top:-61px;}  
+
+/*main2=================================*/
+.main2{height:447px;background:#1c1a25;}
+   .m2-left{width:618px;height:414px;}
+      .m2-lnav{border-right:1px solid #443b4f;}
+	     .m2-lnav li{float:left;height:110px;}
+		    .m2-download{display:block;width:215px;height:110px;background:url(img/sprite.jpg) no-repeat 0 0;}
+			.m2-register{display:block;width:101px;height:110px;background:url(img/sprite.jpg) no-repeat -215px 0;}
+			.m2-recharge{display:block;width:100px;height:110px;background:url(img/sprite.jpg) no-repeat -315px 0;}
+			.m2-exchange{display:block;width:100px;height:110px;background:url(img/sprite.jpg) no-repeat -415px 0;}
+			.m2-newhand{display:block;width:101px;height:110px;background:url(img/sprite.jpg) no-repeat -516px 0;}
+			 .m2-lnav li:hover .m2-download{background:url(img/sprite.jpg) no-repeat 0 -110px;}
+			 .m2-lnav li:hover .m2-register{background:url(img/sprite.jpg) no-repeat -215px -110px;}
+			 .m2-lnav li:hover .m2-recharge{background:url(img/sprite.jpg) no-repeat -315px -110px;}
+			 .m2-lnav li:hover .m2-exchange{background:url(img/sprite.jpg) no-repeat -415px -110px;}
+			 .m2-lnav li:hover .m2-newhand{background:url(img/sprite.jpg) no-repeat -516px -110px;}
+        .m2-lcon{position:relative;}
+		   .m2-lpicbox li{width:616px;height:303px;border:1px solid #443b4f;} 
+		   .m2-ldotbox{width:90px;height:15px;position:absolute;right:12px;bottom:10px;}
+           .m2-ldotbox a{float:left;width:15px;height:15px;background:#3a3e47;border-radius:50%;margin-left:3px;}
+ 
+   .m2-ldotbox .active{float:left;width:15px;height:15px;background:#d0290a;border-radius:50%;margin-left:3px;}
+   .hide{display:none;}
+   .show{display:block;}
+   
+   .m2-right{width:382px;height:414px;}
+      .m2-r-t{height:53px;background:url(img/sever.png) no-repeat 13px 7px;padding-left:115px;padding-top:15px;}
+	     .m2-r-t p{padding-bottom:2px;}
+		 .m2-r-t p a{font-size:14px;color:#9faace;font-family:'microsoft yahei';}
+		 .m2-r-t p a i{color:#F00;}
+      .m2-r-c{width:376px;height:42px;background:url(img/sprite.jpg) no-repeat 0 -221px;padding-left:5px;}
+	     .m2-r-c p{font-size:12px;color:#adb9e0;font-family:'microsoft yahei';padding-top:14px;position:relative;}
+		 .m2-r-c p a{font-size:12px;color:#f93d1a;font-family:'microsoft yahei';text-decoration:underline;}
+		 .m2-plus{width:14px;height:14px;background:url(img/sprite.jpg) no-repeat -603px -227px;position:absolute;right:-19px;top:16px;}
+		 .m2-care{width:176px;}
+		    .m2-care li{float:left;}
+			.m2-look{font-size:12px;color:#adb9e0;padding-top:14px}
+			.m2-care li a{display:block;padding:19px 18px;margin:0 5px;}
+         .weixin:hover{background:url(img/sprite.jpg) no-repeat -403px -222px;}
+		 .sina:hover{background:url(img/sprite.jpg) no-repeat -445px -222px;}
+		 .QQweibo:hover{background:url(img/sprite.jpg) no-repeat -487px -222px;}
+	  .m2-r-b{width:382px;height:305px;background:#322e3f;}
+	     .m2-r-list{width:381px;height:57px;background:url(img/sprite.jpg) no-repeat 0 -262px;}
+		    .m2-r-list li{width:95px;height:35px;float:left;padding-top:20px;}
+			.m2-r-list li a{font-size:14px;color:#FC6;font-family:'microsoft yahei';padding:0 33px;}
+		 .m2-r-conbox{padding-top:16px;position:relative;} 
+		    .m2-rcon1{width:347px;height:34px;background:url(img/sprite.jpg) no-repeat 0 -378px;margin-left:17px;}
+			   .m2-rcon1 a{display:block;font-size:14px;color:#e93d03;padding-left:58px;padding-top:9px;}
+			.m2-rcon2{width:344px;height:162px;margin-left:17px;padding-top:5px;}
+			   .m2-exp a,.m2-date{font-size:12px;color:#919abb;line-height:27px;}
+			.m2-rcon3{width:80px;position:absolute;right:5px;bottom:-18px;}
+			   .m2-plus2{display:block;width:13px;height:13px;background:url(img/more.jpg);margin-right:5px;margin-top:1px;}
+			   .m2-rcon3 a{font-size:12px;color:#919abb;}
+	
+	.m2-r-list .active1{width:95px;height:35px;background:url(img/sprite.jpg) no-repeat -94px -323px;margin-top:2px;}		   
+
+/*main3======================================*/
+.main3{height:162px;background:#1c1a25;}
+   .main3 a{float:left;border:1px solid #433b4f;margin-right:8px;}
+   .main3 .m3-last{margin-right:0;}
+
+/*main4======================================*/
+.main4{height:378px;background:#1c1a25;}
+   .m4-left{width:658px;}
+      .m4-list1{height:59px;}
+	     .m4-list1 li{float:left;}
+		    .shushi{display:block;width:109px;height:58px;background:url(img/sprite.jpg) no-repeat 0 -412px;}
+			.shenshe{display:block;width:110px;height:58px;background:url(img/sprite.jpg) no-repeat -109px -412px;}
+			.shouhu{display:block;width:110px;height:58px;background:url(img/sprite.jpg) no-repeat -219px -412px;}
+			.mofa{display:block;width:110px;height:58px;background:url(img/sprite.jpg) no-repeat -329px -412px;}
+			.zhanshi{display:block;width:110px;height:58px;background:url(img/sprite.jpg) no-repeat -439px -412px;}
+			.cike{display:block;width:107px;height:58px;background:url(img/sprite.jpg) no-repeat -549px -412px;}
+	        .shushi:hover{display:block;width:109px;height:59px;background:url(img/sprite.jpg) no-repeat 0 -471px;}
+		    .shenshe:hover{display:block;width:110px;height:59px;background:url(img/sprite.jpg) no-repeat -109px -471px;}
+			.shouhu:hover{display:block;width:110px;height:59px;background:url(img/sprite.jpg) no-repeat -219px -471px;}
+			.mofa:hover{display:block;width:110px;height:59px;background:url(img/sprite.jpg) no-repeat -329px -471px;}
+			.zhanshi:hover{display:block;width:110px;height:59px;background:url(img/sprite.jpg) no-repeat -439px -471px;}
+			.cike:hover{display:block;width:107px;height:59px;background:url(img/sprite.jpg) no-repeat -549px -471px;}
+   .m4-right{width:322px;}
+      .m4-r-t{margin:5px 0 15px;}
+	     .m4-clock{width:26px;height:27px;background:url(img/sprite.jpg) no-repeat -630px -2px;}
+		 .m4-r-t h2{font-size:18px;color:#f7cc95;font-family:'microsoft yahei';padding-left:16px;padding-top:1px;}
+	  
+	     .m4-list2{width:319px;height:25px;background:url(img/sprite.jpg) no-repeat 0 -530px;margin-bottom:2px;}
+		    .m4-list2 a,.m4-list2 p{font-size:12px;color:#8c95b6;padding-top:4px;font-family:'microsoft yahei';}
+			.m4-exp1{padding-left:27px;}
+			.m4-exp2{padding-right:10px;}
+	     .m4-con2{width:319px;height:149px;border:1px solid #433b4f;margin:5px 0 12px;position:relative;}
+		    .opabox{width:100%;position:absolute;left:0;bottom:0;}
+			   .opa{width:100%;height:36px;background:#000;opacity:0.5;filter:alpha(opacity:50);}
+			   .m4-exp3{position:absolute;left:10px;bottom:10px;font-size:14px;color:#fff;font-family:'microsoft yahei';}
+		
+/*main5======================================*/
+.main5{height:810px;background:#1c1a25;}
+   .m5-left{margin-right:19px;}
+      .m5-l-t{width:215px;height:189px;background:url(img/sprite.jpg) no-repeat 0 -555px;margin-bottom:24px;}
+	     .m5-l-t h2{font-size:16px;color:#dbca90;font-family:'microsoft yahei';text-align:center;padding:11px 0;}
+		 .m5-l-list{width:180px;height:134px;padding:15px;}
+		    .m5-l-list a{font-size:14px;color:#9587ab;line-height:28px;}
+	  .m5-l-c{width:215px;height:302px;margin-bottom:22px;position:relative;}
+	     .m5-l-cpic{display:block;width:215px;height:262px;}
+	        .m5-larr{display:block;width:9px;height:15px;background:url(img/next.png) no-repeat;position:absolute;left:10px;top:48%;}
+	        .m5-rarr{display:block;width:9px;height:15px;background:url(img/prev.png) no-repeat;position:absolute;right:10px;top:48%;}
+	     .m5-cooperation{height:46px;width:215px;position:relative;}
+		    .m5-coo{width:205px;height:35px;background:url(img/sprite.jpg) no-repeat -451px -273px;border:5px solid #322b3c;z-index:1;font-size:16px;color:#988fae;text-align:center;line-height:36px;font-family:'microsoft yahei';position:relative;}
+			.m5-cooclain{width:185px;height:70px;border:5px solid #322b3c;padding:10px 10px;overflow:scroll;position:absolute;left:0;top:35px;background:#19181d;display:none;}
+			   .m5-cooclain a{display:block;font-size:12px;color:#b1a1ca;font-family:'microsoft yahei';line-height:20px;}
+			   .m5-cooperation:hover .m5-coo{border-bottom:0;background:url(img/sprite.jpg) no-repeat -451px -311px;}
+			   .m5-cooperation:hover .m5-cooclain{display:block;}
+	  .m5-l-b{}
+	     .m5-l-b a{display:block;width:215px;height:268px;background:transparent url(img/examen.jpg) repeat scroll 0% 0%;transition:all 1s ease 0s;}
+		 .m5-l-b a:hover{transform:translate(-215px,0);transition:all 1s ease 0s;background:transparent url(img/examen.jpg) repeat scroll -216px 0;}
+   .m5-center{width:424px;margin-right:20px;}
+      .m5-c-top{height:348px;margin-bottom:40px;}
+	     .m5-c-t1{height:42px;}
+	        .m5-ctalk{width:36px;height:26px;background:url(img/sprite.jpg) no-repeat -612px -352px;}
+			.m5-c-t1 h2{font-size:18px;color:#f3ca90;font-family:'microsoft yahei';padding-left:15px;padding-top:1px;}
+		 .m5-c-b1,.m5-c-b2{position:relative;}
+		    .m5-morebox{width:108px;height:32px;border-bottom:1px solid #433b4f;position:absolute;right:0;top:0;padding-top:15px;}
+		       .m5-plus{width:13px;height:13px;background:url(img/more.jpg);margin-top:2px;margin-left:18px;}
+			   .m5-more{font-size:12px;color:#9589a8;font-family:'microsoft yahei';padding-left:5px;}
+		    .m5-c-list1{border-left:1px solid #433b4f;} 
+			   .m5-c-list1 li{float:left;width:104px;height:46px;border:1px solid #433b4f;border-left:0;text-align:center;line-height:46px;}	
+			   .m5-c-list1 li a{font-size:12px;color:#a295b7;}
+			   
+			.m5-c-con1{width:422px;height:256px;}
+			   .m5-c-con1 li{width:422px;height:200px;border:1px solid #433b4f;border-top:0;background:#322b3c;padding:23px 0 34px;}
+			   .m5-c-tpic{width:105px;height:197px;margin:0 15px;border:1px solid #433b4f;}
+	           .m5-c-texp a{display:block;font-size:14px;color:#a295b7;font-family:'microsoft yahei';line-height:25px;}
+		 .m5-c-list1 .active2{background:#322b3c;;border-bottom:1px solid #322b3c;}
+		 .m5-c-list1 .active2 a{color:#fff;}	
+		 
+	   .m5-c-bottom{height:347px;}
+	     .m5-c-t2{height:42px;}
+	        .m5-cmedia{width:35px;height:24px;background:url(img/sprite.jpg) no-repeat -619px -384px;}
+			.m5-c-t2 h2{font-size:18px;color:#f3ca90;font-family:'microsoft yahei';padding-left:15px;padding-top:1px;}	
+   .m5-right{width:322px;}
+      .m5-r-top{height:348px;margin-bottom:40px;}
+	     .m5-r-t1{height:42px;}
+		    .m5-rgame{width:22px;height:26px;background:url(img/sprite.jpg) no-repeat -631px -42px;}
+			.m5-r-t1 h2{font-size:18px;color:#f3ca90;font-family:'microsoft yahei';padding-left:15px;padding-top:1px;}
+	     .m5-r-b1{width:286px;height:271px;border:1px solid #433b4f;background:#26212d;padding:16px 17px;}
+		    .m5-r-b1 ul li{width:286px;height:26px;padding-bottom:16px;border-bottom:1px dashed #594f67;margin-bottom:16px;}
+			.m5-r-b1 .m5-r-bb{border-bottom:0;margin-bottom:0;}
+			   .m5-r-btit{width:80px;height:23px;font-size:14px;color:#fff;text-align:center;font-family:'microsoft yahei';background:#594f67;padding-top:3px;position:relative;}
+			      .m5-r-barr{display:block;width:8px;height:26px;background:url(img/ico.jpg);position:absolute;right:-8px;top:0;}
+			   .m5-r-bexp{margin-left:22px;padding-top:5px;}
+			      .m5-r-bexp a{font-size:12px;color:#8a7d9e;border-right:1px solid #8a7d9e;padding-right:3px;}
+				  .m5-r-bexp .m5-r-blast{border-right:0;}
+		    .m5-r-b1 h2{width:279px;height:39px;border:3px solid #4b3f5c;text-align:center;line-height:39px;}
+			   .m5-r-b1 h2 a{font-size:20px;color:#b1a1ca;font-family:'microsoft yahei';}
+	  .m5-r-bottom{height:347px;}
+	     .m5-r-t2{height:42px;}
+		    .m5-rlook{width:30px;height:28px;background:url(img/sprite.jpg) no-repeat -625px -80px;}
+			.m5-r-t2 h2{font-size:18px;color:#f3ca90;font-family:'microsoft yahei';padding-left:15px;padding-top:1px;}
+		 .m5-r-b2{position:relative;}
+         .m5-r-con1{width:322px;height:256px;}
+		    .m5-r-con1 li{width:320px;height:200px;border:1px solid #433b4f;border-top:0;background:#322b3c;padding:23px 0 34px;}
+               .m5-r-bexp1 a{float:left;width:137px;height:90px;padding:10px 11px;}
+
+/*main6=======================================*/
+.main6{height:124px;}
+   .m6-notice{width:1000px;height:30px;position:relative;margin-bottom:5px;}
+      .m6-pic{display:block;width:893px;height:30px;margin:0 auto;}
+      .m6-notice h3{font-size:14px;color:#908c9b;font-family:'microsoft yahei';position:absolute;left:46%;top:13px;}
+   .main6 p{font-size:14px;color:#908c9b;font-family:'microsoft yahei';text-align:center;padding-top:12px;}
+
+/*footer======================================*/
+.footer{width:100%;height:110px;background:#181818;}
+   .f-line{width:100%;height:10px;background:url(img/f-line.jpg) no-repeat;}
+   .f-con{width:1000px;margin:10px auto;}
+      .f-logo{width:120px;height:70px;background:url(img/logo_dark.png) no-repeat 0 -50px;margin-left:70px;margin-right:8px;}
+	  .f-police{width:31px;height:38px;background:url(img/cyou_copyright_sprite.png) no-repeat -1px -5px;margin-top:16px;}
+	  .f-exp{padding-top:15px;padding-left:20px;}
+	     .f-exp p{line-height:20px;font-size:12px;color:#767676;}
+</style>
+<script>
+window.onload=function(){
+	function change(a,b,c,d,e){
+    var oList=document.getElementById(a).getElementsByTagName(b);
+    var oCon=document.getElementById(c).getElementsByTagName(d);
+	for(var i=0;i<oList.length;i++){
+		oList[i].index=i;
+		oList[i].onmouseover=function(){
+			for(var j=0;j<oList.length;j++){
+				oList[j].className='';
+				oCon[j].className='hide';
+				}
+			this.className=e;
+			oCon[this.index].className='show';
+			}
+		}
+		}
+	change('m2_dotbox','a','m2_picbox','li','active');	
+	change('m2_rlist1','li','m2_rcon2','li','active1');
+	change('m4_list1','li','m4_con1','li','');
+	change('m5_clist1','li','m5_ccon1','li','active2');
+	change('m5_clist2','li','m5_ccon2','li','active2');
+	change('m5_rlist1','li','m5_rcon1','li','active2');
+	
+	var oLi=document.getElementById('m4_box2').getElementsByTagName('li');
+	for(var i=0;i<oLi.length;i++){
+		oLi[i].onmouseover=function(){
+			var oList2=this.getElementsByTagName('div')[0];
+			var oCon2=this.getElementsByTagName('div')[1];
+			oList2.className='m4-list2 clearfix hide';
+			oCon2.className='m4-con2 show';
+			}
+	    oLi[i].onmouseout=function(){
+			var oList2=this.getElementsByTagName('div')[0];
+			var oCon2=this.getElementsByTagName('div')[1];
+			oList2.className='m4-list2 clearfix show';
+			oCon2.className='m4-con2 hide';
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+<div class="head">
+   <div class="head-in clearfix">
+      <a href="javascript:;" class="company fl" title="畅想"></a>
+      <ul class="h-con2 fr clearfix">
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">客服</a><i class="h-arr fl"></i></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">畅游全服务</a><i class="h-arr fl"></i></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">畅游全游戏</a><i class="h-arr fl"></i></li>
+      </ul>
+      <ul class="h-con1 fr clearfix">
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip1 fl"></a><a href="javascript:;" class="h-exp fl">注册</a></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip2 fl"></a><a href="javascript:;" class="h-exp fl">充值</a></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip3 fl"></a><a href="javascript:;" class="h-exp fl">畅游+</a></li>
+      </ul>
+   </div>
+</div>
+
+<div class="m1-line"></div>
+<div class="main-bbg">
+<div class="main-picbg">
+   
+   <div class="main clearfix">
+      <div class="main1">
+         <a href="javascript:;" class="m1-bg"></a>
+         <div class="m1-head clearfix" id="m1_head">
+            <a href="javascript:;" class="logo fl" title="灵魂回响"></a>
+            <ul class="top-nav1 fr clearfix" id="top_nav">
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>首页</h2><h3>HOME</h3></a></li> 
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>新闻公告</h2><h3>NEWS</h3></a>
+                  <p class="news-btn">
+                     <a href="javascript:;" title="详情">游戏新闻</a>
+                     <a href="javascript:;" title="详情">官方公告</a>
+                  </p>
+               </li>             
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>游戏特色</h2><h3>FEATURES</h3></a></li>
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>新手指南</h2><h3>NEWBIE</h3></a>
+                  <p class="newhands-btn">
+                     <a href="javascript:;" title="详情">新手指南</a>
+                     <a href="javascript:;" title="详情">职业专题</a>
+                     <a href="javascript:;" title="详情">资料站</a>
+                     <a href="javascript:;" title="详情">常见问题</a>
+                  </p>
+               </li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>游戏下载</h2><h3>DOWNLOAD</h3></a></li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>活动专区</h2><h3>ACTIVTY</h3></a></li>
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>视觉欣赏</h2><h3>VIDEO & PICTURE</h3></a>
+                  <p class="vision-btn">
+                     <a href="javascript:;" title="详情">游戏视频</a>
+                     <a href="javascript:;" title="详情">壁纸截图</a>
+                  </p>
+               </li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>玩家互动</h2><h3>INTERACTION</h3></a></li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>客户服务</h2><h3>SERVICE</h3></a></li>
+            </ul>
+         </div>
+       <a href="javascript:;" class="zan"></a>          
+      </div>
+      
+      <div class="main2">
+         <div class="m2-left fl">
+            <ul class="m2-lnav clearfix">
+               <li><a href="javascript:;" class="m2-download"></a></li>
+               <li><a href="javascript:;" class="m2-register"></a></li>
+               <li><a href="javascript:;" class="m2-recharge"></a></li>
+               <li><a href="javascript:;" class="m2-exchange"></a></li>
+               <li><a href="javascript:;" class="m2-newhand"></a></li>
+            </ul>
+            <div class="m2-lcon">
+               <ul class="m2-lpicbox" id="m2_picbox">
+                  <li class="show"><a href="javascript:;"><img src="img/main_a1 (1).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (2).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (3).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (4).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (5).jpg"/></a></li>
+               </ul>
+               <div class="m2-ldotbox clearfix" id="m2_dotbox">
+                  <a href="javascript:;" class="active"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+               </div>
+            </div>
+         </div>
+         <div class="m2-right fl">
+            <div class="m2-r-t">
+               <p><a href="javascript:;" title="电信一区">电信一区 <i>【元素殿堂】</i> 欢迎进驻！</a></p>
+               <p><a href="javascript:;" title="网通一区">网通一区 <i>【雷霆之怒】</i> 欢迎进驻！</a></p>
+            </div>
+            <div class="m2-r-c clearfix">
+               <p class="fl">据您上次访问有<a href="#">200</a>条更新<a href="#" class="m2-plus"></a></p>
+               <ul class="m2-care fr clearfix">
+                  <li class="m2-look">关注：</li>
+                  <li><a href="javascript:;" title="微信" class="weixin"></a></li>
+                  <li><a href="javascript:;" title="新浪" class="sina"></a></li>
+                  <li><a href="javascript:;" title="QQ微博" class="QQweibo"></a></li>
+               </ul>
+            </div>
+            <div class="m2-r-b">
+               <ul class="m2-r-list clearfix" id="m2_rlist1">
+                  <li class="active1"><a href="#" title="综合" class="m2-r-comprehensive">综合</a></li>
+                  <li><a href="#" title="新闻" class="m2-r-news">新闻</a></li>
+                  <li><a href="#" title="公告" class="m2-r-notice">公告</a></li>
+                  <li><a href="#" title="媒体" class="m2-r-media">媒体</a></li>
+               </ul>
+               <div class="m2-r-conbox">
+                   <div class="m2-rcon1">
+                      <a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                   </div>
+                   <ul class="m2-rcon2" id="m2_rcon2">
+                      <li class="show clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                         </div>
+                      </li>
+                   </ul>
+                   <p class="m2-rcon3">
+                      <a href="#" class="m2-plus2 fl"></a>
+                      <a href="#" class="fl">更多信息</a>
+                   </p>
+               </div>  
+            </div>
+         </div>
+      </div>
+   
+      <div class="main3 clearfix">
+         <a href="javascript:;"><img src="img/main3-1.jpg" /></a>
+         <a href="javascript:;"><img src="img/main3-2.jpg" /></a>
+         <a href="javascript:;"><img src="img/main3-3.jpg" /></a>
+         <a href="javascript:;" class="m3-last"><img src="img/main3-4.jpg" /></a>
+      </div>
+   
+      <div class="main4 clearfix">
+         <div class="m4-left fl">
+            <ul class="m4-list1 clearfix" id="m4_list1">
+               <li><a href="javascript:;" class="shushi"></a></li>
+               <li><a href="javascript:;" class="shenshe"></a></li>
+               <li><a href="javascript:;" class="shouhu"></a></li>
+               <li><a href="javascript:;" class="mofa"></a></li>
+               <li><a href="javascript:;" class="zhanshi"></a></li>
+               <li><a href="javascript:;" class="cike"></a></li>
+            </ul>
+            <ul class="m4-con1" id="m4_con1">
+               <li class="show"><a href="javascript:;"><img src="img/m4-shushi.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-shenshe.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-shouhu.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-mofa.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-zhanshi.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-cike.jpg" /></a></li>
+            </ul>
+         </div>
+        
+         <div class="m4-right fr">
+             <div class="m4-r-t clearfix">
+                <span class="m4-clock fl"></span>
+                <h2 class="fl">活动中心</h2>
+             </div>
+             <ul class="m4-r-b" id="m4_box2">
+                <li>
+                   <div class="m4-list2 clearfix show">
+                       <a href="#" class="m4-exp1 fl">1女武神的秘宝</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 show">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix show">
+                       <a href="#" class="m4-exp1 fl">2神谕者的成长礼</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">3女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">4女神赐福助力成长，老友归来大礼相赠</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">5赫尔墨斯的宝库，尼凯亚大陆奇珍异宝</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">6女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">绑定畅游+，送十格背包</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">每日登录有惊喜</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+             </ul>
+         </div>
+      </div>
+      
+      <div class="main5 clearfix">
+         <div class="m5-left fl">
+            <div class="m5-l-t">
+               <h2>快捷入口</h2>
+               <div class="m5-l-list clearfix">
+                  <ul class="fl">
+                     <li><a href="javascript:;">·账号管理</a></li>
+                     <li><a href="javascript:;">·账号安全</a></li>
+                     <li><a href="javascript:;">·BUG提交</a></li>
+                     <li><a href="javascript:;">·玩家社区</a></li>
+                  </ul>
+                  <ul class="fr">
+                     <li><a href="javascript:;">·兑换中心</a></li>
+                     <li><a href="javascript:;">·畅游知道</a></li>
+                     <li><a href="javascript:;">·客户端FAQ</a></li>
+                     <li><a href="javascript:;">·加速器下载</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="m5-l-c">
+               <div>
+                  <a href="javascript:;" class="m5-l-cpic"><img src="img/main_a3.jpg" /></a>
+                  <a href="javascript:;" class="m5-larr"></a>
+                  <a href="javascript:;" class="m5-rarr"></a>
+               </div>
+               <div class="m5-cooperation">
+                  <div class="m5-coo">媒体合作中心</div>
+                  <div class="m5-cooclain">
+                     <a href="javascript:;">17173</a>
+                     <a href="javascript:;">多玩</a>
+                     <a href="javascript:;">太平洋</a>
+                     <a href="javascript:;">电玩巴士</a>
+                     <a href="javascript:;">新浪</a>
+                     <a href="javascript:;">搜狐</a>
+                     <a href="javascript:;">百度</a>
+                  </div>
+               </div>
+            </div>
+            <div class="m5-l-b">
+               <a href="javascript:;"></a>
+            </div>      
+         </div>
+         <div class="m5-center fl">
+             <div class="m5-c-top">    
+                 <div class="m5-c-t1 clearfix">
+                    <span class="m5-ctalk fl"></span>
+                    <h2 class="fl">玩家交流</h2>
+                 </div>
+                 <div class="m5-c-b1">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_clist1">
+                       <li class="active2"><a href="javascript:;">玩家攻略</a></li>
+                       <li><a href="javascript:;">论坛热帖</a></li>
+                       <li><a href="javascript:;">社区精华</a></li>
+                    </ul>
+                    <ul class="m5-c-con1" id="m5_ccon1">
+                       <li class="show clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+             </div>  
+             <div class="m5-c-bottom">    
+                 <div class="m5-c-t2 clearfix">
+                    <span class="m5-cmedia fl"></span>
+                    <h2 class="fl">媒体专区</h2>
+                 </div>
+                 <div class="m5-c-b2">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_clist2">
+                       <li class="active2"><a href="javascript:;">17173</a></li>
+                       <li><a href="javascript:;">新浪爱问</a></li>
+                       <li><a href="javascript:;">太平洋游戏</a></li>
+                    </ul>
+                    <ul class="m5-c-con1" id="m5_ccon2">
+                       <li class="show clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+         <div class="m5-right fl">
+            <div class="m5-r-top">
+               <div class="m5-r-t1 clearfix">
+                    <span class="m5-rgame fl"></span>
+                    <h2 class="fl">游戏资料</h2>
+               </div>
+               <div class="m5-r-b1">
+                  <ul>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">新手入门<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">注册账号</a>
+                            <a href="javascript:;">下载游戏</a>
+                            <a href="javascript:;" class="m5-r-blast">登录游戏</a>
+                        </div>
+                     </li>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">职业介绍<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">刺客</a>
+                            <a href="javascript:;">神射手</a>
+                            <a href="javascript:;">守护者</a>
+                            <a href="javascript:;" class="m5-r-blast">魔法师</a>
+                        </div>
+                     </li>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">旅行者日记<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">雷班斯</a>
+                            <a href="javascript:;">弗尔图斯</a>
+                            <a href="javascript:;" class="m5-r-blast">赫利亚纳</a>
+                        </div>
+                     </li>
+                     <li class="m5-r-bb clearfix">
+                        <p class="m5-r-btit fl">神谕者指引<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">1级-19级</a>
+                            <a href="javascript:;">20级-39级</a>
+                            <a href="javascript:;" class="m5-r-blast">40级-49级</a>
+                        </div>
+                     </li>
+                  </ul>
+                  <h2><a href="javascript:;">进入资料站</a></h2>
+               </div>
+            </div>
+            <div class="m5-r-bottom">
+               <div class="m5-r-t2 clearfix">
+                    <span class="m5-rlook fl"></span>
+                    <h2 class="fl">视觉欣赏</h2>
+               </div>
+               <div class="m5-r-b2">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_rlist1">
+                       <li class="active2"><a href="javascript:;">游戏视频</a></li>
+                       <li><a href="javascript:;">游戏截图</a></li>
+                    </ul>
+                    <ul class="m5-r-con1" id="m5_rcon1">
+                       <li class="show clearfix">
+                          <div class="m5-r-bexp1 fl">
+                              <a href="javascript:;"><img src="img/m5-1.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-3.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <div class="m5-r-bexp1 fl">
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                          </div>
+                       </li>
+                    </ul>
+               </div>
+               
+            </div>
+         </div>
+      </div>  
+   
+      <div class="main6">
+         <div class="m6-notice">
+            <img src="img/game_anc.jpg" class="m6-pic"/>
+            <h3>健康游戏公告</h3>
+         </div>
+         <p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+         <p>本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+      </div>   
+   </div> 
+     
+</div>
+</div>
+
+<div class="footer">
+   <div class="f-line"></div>
+   <div class="f-con clearfix">
+      <div class="f-logo fl"></div>
+      <div class="f-police fl"></div>
+      <div class="f-exp fl">
+         <p>北京畅游时代数码技术有限公司版权所有COPYRIGHT&copy;2011 CHANGYOU.COM LIMITED.ALL RIGHTS RESERVED.法律声明|联系我们</p>
+         <p>京网文[2011]0260-093号|京ICP证：070525号</p>
+      </div>
+   </div>
+</div>
+
+</body>
+</html>

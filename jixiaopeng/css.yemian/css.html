@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/base.css" rel="stylesheet" />
+		<style>
+			.content_a {
+				height: 870px;
+				width: 100%;
+			}
+			
+			.left_a {
+				height: 870px;
+				width: 30%;
+				background: #000;
+				position: relative;
+				background: url(img/left.gif) repeat;
+			}
+			
+			.right_a {
+				height: 870px;
+				width: 65%;
+				background: url(img/right.bg.png) repeat rgba(255, 255, 255, 0.8);
+				position: relative;
+			}
+			
+			.left_a_a {
+				position: absolute;
+				right: 10px;
+				top: 30%;
+			}
+			
+			.left_a_a li {
+				height: 50px;
+				width: 200px;
+				color: #fff;
+				line-height: 50px;
+				text-align: center;
+				border: 1px solid #fff;
+				cursor: pointer;
+				margin-top: 10px;
+				font-size: 15px;
+				font-family: "arial, helvetica, sans-serif";
+				border-bottom-left-radius: 20px 20px;
+				border-top-right-radius: 20px 20px;
+			}
+			
+			.left_a_a .on {
+				background: #0ff;
+				color: #000;
+			}
+			
+			.title_css {
+				height: 200px;
+			}
+			
+			#title_c {
+				display: block;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 250px;
+				height: 40px;
+				background-color: rgb(0, 255,255);
+				color: rgb(255, 255, 255);
+				font: bold 25px/40px georgia, sans-serif;
+				text-align: center;
+				transform: translate(-50px, 50px) rotate(-45deg);
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), 0px 0px 2px rgb(255, 255, 255) inset;
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+			}
+			
+			#title_c:hover {
+				background-color: rgb(153, 0, 0);
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+				text-decoration: none;
+			}
+			
+			.head_icon {
+				height: 50px;
+			}
+			
+			.nav {
+				height: 128px;
+				overflow: hidden;
+				background: url(img/menu.png);
+			}
+			
+			.nav li {
+				height: 128px;
+				line-height: 90px;
+				text-align: center;
+				float: left;
+				margin-left: 90px;
+				font-weight: bold;
+			}
+			.nav li a{color:#000;
+			font-size:17px;
+			}
+			.nav li a:hover {
+				color: #0ff;
+			}
+			.nav .nav_first {
+				margin-left: 120px;
+			}
+			
+			.con_works {
+				height: 500px;
+				overflow: hidden;
+				background: url(img/1.png) repeat-y;
+			}
+			
+			.footer {
+				height: 105px;
+				overflow: hidden;
+				width: 900px;
+				margin: 0 auto;
+				background: url(img/4.png);
+			}
+			.cont_css {
+				height: 870px;
+				width: 5%;
+			}
+			.right_content {
+				height: 500px;
+				width: 70%;
+				margin: 0 auto;
+				border: 1px solid #fff;
+			}
+			.right_content li {
+				height: 500px;
+				width: 100%;
+				margin: 0 auto;
+				display: none;
+				 cursor:pointer;
+			}
+			.right_content .active {
+				display: block;
+			}
+			.right_content p {
+				height: 50px;
+				width: 100%;
+				line-height: 50px;
+				margin-left: 20px;
+				color: rgba(0, 0, 0, 0.5);
+				font-size: 15px;
+				/*white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;*/
+				
+			}
+			.right_content div {
+				height: 450px;
+				width: 100%;
+			}
+			
+			.right_content div a {
+				height: 450px;
+				width: 100%;
+			}
+			
+			.right_content img {
+				width: 100%;
+			}
+		</style>
+		<script src="js/css.js">
+		</script>
+	</head>
+
+	<body>
+		<header>
+
+		</header>
+		<div class="content_a clearfix">
+			<div class="left_a fl">
+				<div class="title_css">
+					<a id="title_c" href="javascript:;">欢迎来到CSS页 </a>
+				</div>
+
+				<ul class="left_a_a" id="left">
+					<li class="on">灵魂回响</li>
+					<li>二手车网站</li>
+					<li>剑灵</li>
+					<li>新浪首页</li>
+					<li>仙酒网</li>
+				</ul>
+			</div>
+			<div class="cont_css fl"></div>
+			<div class="right_a fl">
+				<div class="head_icon"></div>
+				<ul class="nav">
+					<li class="nav_first">
+						<a href="http://127.0.0.1:8020/jixiaopeng/index.html">首页</a>
+					</li>
+					<li><a href="javascript:;">CSS作品页</a> </li>
+					<li><a href="http://127.0.0.1:8020/jixiaopeng/js.html">JS作品页</a> </li>
+					<li><a href="http://127.0.0.1:8020/jixiaopeng/html5.html">CSS3&HTML5</a> </li>
+					<li><a href=" http://127.0.0.1:8020/jixiaopeng/personal_information.html">个人信息</a></li>
+				</ul>
+				<div class="page-left"></div>
+				<div class="con_works">
+					<ul class="right_content" id="content">
+						<li class="active">
+							<p>网站整体的页面效果很酷炫；主要是背景图片的拼接或者说排版很精致到位。</p>
+							<div>
+								<a href="javascritpt:;"><img src="img/linghunhuixiang.png" /></a>
+							</div>
+						</li>
+						<li>
+							<p>二手网站的静态网页布局比较简单，就是图片的排版需要精细的处理。</p>
+							<div>
+								<a href="javascript:;"><img src="img/ershouche.png" /></a>
+							</div>
+						</li>
+						<li>
+							<p>网站整体的页面效果很酷炫；主要是背景图片的拼接或者说排版很精致到位。 </p>
+							<div>
+								<a href="javascript:;"><img src="img/jingling.png" /></a>
+							</div>
+						</li>
+						<li>
+							<p>该网站是新闻类型的网页，网页整体是容纳最大的信息，页面效果相对单调。</p>
+							<div>
+								<a href="javascript:;"><img src="img/xinlang.png" /></a>
+							</div>
+						</li>
+						<li>
+							<p>该网页是购物网站；布局的时侯需要大量的图片排版处理，以及雪碧图的应用</p>
+							<div>
+								<a href="javascript:;"><img src="img/xianjiuwang.png" /></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer"></div>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>

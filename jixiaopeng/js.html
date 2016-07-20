@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/base.css" rel="stylesheet" />
+		<style>
+			body {
+				/*background: #67b66e;*/
+				background: url(img/patterns/footer_1.png) repeat;
+				width: 1366px;
+			}
+			
+			.box {
+				width: 1024px;
+				margin: 0 auto;
+				border: 5px dashed purple;
+			}
+			
+			.head_icon {
+				width: 100%;
+				height: 100px;
+				background: url(img/vect.png) repeat-x;
+			}
+			
+			#colock {
+				width: 200px;
+				margin-left: 200px;
+			}
+			
+			.white {
+				color: #fff;
+			}
+			
+			#colock li {
+				float: left;
+				font-size: 30px;
+				width: 24px;
+				height: 35px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#colock img {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.nav {
+				width: 1024px;
+				background: #C57D5A;
+				position: relative;
+			}
+			
+			.nav span {
+				height: 160px;
+				width: 160px;
+				position: absolute;
+				left: -170px;
+				top: 200px;
+				overflow: hidden;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				-webkit-transition: -webkit-transform 1s ease-out;
+				-moz-transition: -moz-transform 1s ease-out;
+				-o-transition: -o-transform 1s ease-out;
+				-ms-transition: -ms-transform 1s ease-out;
+			}
+			
+			.nav span:hover {
+				-webkit-transform: rotateZ(360deg);
+				-moz-transform: rotateZ(360deg);
+				-o-transform: rotateZ(360deg);
+				-ms-transform: rotateZ(360deg);
+				transform: rotateZ(360deg);
+			}
+			
+			.nav p {
+				padding-left: 50px;
+				height: 100px;
+				border-bottom: 5px dashed #fff;
+				overflow: hidden;
+				line-height: 100px;
+				font-family: 'Abril Fatface', cursive;
+			}
+			
+			.nav p a {
+				color: #fff;
+				font-size: 30px;
+			}
+			/*zhaopianqian-start*/
+			
+			.move_zhaopian {
+				height: 750px;
+				background: #fff;
+			}
+			
+			.move_m h1,
+			.lens h1,
+			.iphone_menu h1,
+			.block_move h1,
+			.move-into h1,
+			.lunbo h1,
+			.shoufengqin h1,
+			.move_zhaopian h1 {
+				height: 50px;
+				line-height: 50px;
+				font-size: 35px;
+				font-weight: bold;
+				color: burlywood;
+				margin-left: 50px;
+				border-bottom: 2px dotted peru;
+			}
+			
+			.move_m p,
+			.lens p,
+			.iphone_menu p,
+			.block_move p,
+			.move-into p,
+			.lunbo p,
+			.shoufengqin p,
+			.move_zhaopian p {
+				height: 100px;
+				font-size: 25px;
+				line-height: 100px;
+				font-family: "微软雅黑";
+				color: rgba(255, 255, 255, 1);
+				background: #b1f6cb;
+			}
+			
+			.move_zhaopian #ull {
+				width: 510px;
+				margin: 0 auto;
+			}
+			
+			.move_zhaopian #ull li {
+				width: 150px;
+				height: 150px;
+				float: left;
+				margin: 10px;
+			}
+			
+			.move_zhaopian #ull img {
+				width: 150px;
+			}
+			
+			.move_zhaopian #ull li.active {
+				border: 3px dashed red;
+			}
+			
+			.color_pic {
+				background: url(img/map-bro.jpg) repeat-x;
+				height: 10px;
+			}
+			/*shoufengqin----start*/
+			
+			.shoufengqin {
+				background: #fff;
+				height: 600px;
+			}
+			
+			.shoufengqin #ul1 {
+				height: 300px;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.shoufengqin #ul1 li {
+				height: 300px;
+				width: 300px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.shoufengqin #ul1 li img {
+				width: 300px;
+				vertical-align: top;
+			}
+			/*轮播图--start*/
+			
+			.lunbo {
+				height: 600px;
+				background: #fff;
+			}
+			
+			.lunbo #box_a {
+				width: 600px;
+				height: 400px;
+				margin: 10px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.lunbo #ul_a {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.lunbo #ul_a li {
+				width: 600px;
+				height: 400px;
+				float: left;
+			}
+			
+			.lunbo #ol1 {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+			}
+			
+			.lunbo #ol1 li {
+				width: 30px;
+				height: 30px;
+				background: #2acfff;
+				border-radius: 50%;
+				display: inline-block;
+				margin: 0 10px;
+				cursor: pointer;
+			}
+			
+			.lunbo #ol1 li.active {
+				background: #fff;
+			}
+			
+			.lunbo #box_a a {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: rgba(204, 102, 204, 0.8);
+				position: absolute;
+				top: 50%;
+				margin-top: -25px;
+				text-decoration: none;
+				color: #fff;
+				font-size: 30px;
+				transition: .4s all ease;
+				z-index: 99;
+			}
+			
+			.lunbo #box_a a:hover {
+				background: #2acfff;
+			}
+			
+			.lunbo #left {
+				left: 0;
+			}
+			
+			.lunbo #right {
+				right: 0;
+			}
+			/*拉勾移入移出*/
+			
+			.move-into {
+				height: 900px;
+				background: #fff;
+				position: relative;
+			}
+			
+			.move-into #ull {
+				width: 735px;
+				margin: 0px auto;
+				height: 100%;
+			}
+			
+			.move-into li {
+				position: relative;
+				height: 225px;
+				width: 225px;
+				float: left;
+				margin: 10px;
+				overflow: hidden;
+			}
+			
+			.move-into li img {
+				width: 100%;
+			}
+			
+			.move-into span {
+				width: 100%;
+				height: 100%;
+				background: rgba(255, 0, 0, .6);
+				position: absolute;
+				left: 225px;
+				top: 0;
+				font-size: 30px;
+				color: #fff;
+				line-height: 225px;
+				text-align: center;
+			}
+			/*分块运动*/
+			
+			#btna {
+				margin: 0px auto 10px;
+				padding: 5px;
+				background: blue;
+				display: block;
+			}
+			
+			.block_move {
+				height: 600px;
+				background: #fff;
+			}
+			
+			#block_move_a {
+				width: 700px;
+				height: 400px;
+				background: url(img/fengkuaiyundong/0.jpg);
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#block_move_a span {
+				background: url(img/fengkuaiyundong/1.jpg);
+				position: absolute;
+				opacity: 0;
+			}
+			
+			.iphone_menu {
+				height: 500px;
+				background: #fff;
+				position: relative;
+			}
+			
+			#box_b {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+			}
+			
+			#box_b img {
+				width: 64px;
+			}
+			/*放大镜*/
+			
+			.lens {
+				height: 550px;
+				background: #fff;
+			}
+			
+			.lens .lens_a {
+				height: 350px;
+				width: 1024px;
+			}
+			
+			.lens_a div {
+				width: 350px;
+				height: 350px;
+				border: 1px solid #000;
+				float: left;
+				position: relative;
+				margin-left: 150px;
+			}
+			
+			#small span {
+				width: 100px;
+				height: 100px;
+				background: yellow;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0.5;
+				filter: alpha(opacity=50);
+				display: none;
+			}
+			
+			#big {
+				overflow: hidden;
+				margin-left: 20px;
+				display: none;
+			}
+			
+			#big img {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.footer_pic {
+				background: url(img/patterns/footer_1.png) repeat-x;
+				width: 100%;
+				height: 100px;
+			}
+			
+			.move_m {
+				height: 550px;
+				width: 1024px;
+				background: #fff;
+			}
+			
+			.move_m .works {
+				height: 400px;
+				position: relative;
+				overflow: hidden;
+				width: 1024px;
+			}
+			
+			#prev {
+				background: url(img/arrowws.png);
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				margin-top: -29px;
+				width: 43px;
+				height: 58px;
+				z-index: 2;
+			}
+			
+			#next {
+				background: url(img/arrowws.png) -43px 0;
+				position: absolute;
+				right: 12px;
+				top: 50%;
+				margin-top: -29px;
+				width: 43px;
+				height: 58px;
+				z-index: 2;
+			}
+			
+			.move_m ul {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.move_m ul li {
+				padding: 50px 20px;
+				float: left;
+			}
+			
+			.move_m ul li img {
+				width: 300px;
+			}
+		</style>
+		<script src="js/move.js"></script>
+		<script src="js/js.js"></script>
+		<script>
+		</script>
+	</head>
+
+	<body>
+		<div class="head_icon">
+			<ul id="colock">
+				<li><img src="img/num.png"></li>
+				<li><img src="img/num.png"></li>
+				<li class="white">:</li>
+				<li><img src="img/num.png"></li>
+				<li><img src="img/num.png"></li>
+				<li class="white">:</li>
+				<li><img src="img/num.png"></li>
+				<li><img src="img/num.png"></li>
+			</ul>
+
+		</div>
+		<div class="box">
+
+			<div class="nav" id="nav_a">
+				<span id="stars"><img src="img/zhizheng.png" /></span>
+				<p>
+					<a href="http://127.0.0.1:8020/jixiaopeng/index.html">首页</a>
+				</p>
+
+				<p>
+					<a href="http://127.0.0.1:8020/jixiaopeng/css.yemian/css.html">CSS作品</a>
+				</p>
+				<p id="works_js">
+					<a href="javascript:;">JS作品</a>
+				</p>
+				<p>
+					<a href="http://127.0.0.1:8020/jixiaopeng/html5.html">HTML5作品</a>
+				</p>
+				<p>
+					<a href="http://127.0.0.1:8020/jixiaopeng/personal_information.html">个人信息</a>
+				</p>
+
+			</div>
+			<div class="base_js"></div>
+			<div class="move_js">
+				<div class="move_zhaopian">
+					<h1>照片墙</h1>
+					<p>此效果运用定位转换，把页面内块的位置获取并给予每个块自己的绝对定位距离，在进行碰撞检测和随机换位操作。
+					</p>
+					<input type="button" value="隨機換位置" id="btn1">
+
+					<ul id="ull">
+						<li><img src="img/img.zhaopianqiang/1.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/2.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/3.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/4.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/5.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/6.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/7.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/8.jpg" /></li>
+						<li><img src="img/img.zhaopianqiang/9.jpg" /></li>
+
+					</ul>
+				</div>
+				<div class="color_pic"></div>
+				<div class="shoufengqin" id="shoufengqin">
+					<h1>手风琴</h1>
+					<p>先进行css布局，声明left变动的数值，进行循环，然后进行判断</p>
+					<ul id="ul1">
+						<li><img src="img/img/25.jpg" /></li>
+						<li><img src="img/img/26.jpg" /></li>
+						<li><img src="img/img/27.jpg" /></li>
+						<li><img src="img/img/28.jpg" /></li>
+						<li><img src="img/img/29.jpg" /></li>
+						<li><img src="img/img/30..jpg" /></li>
+					</ul>
+				</div>
+				<div class="color_pic"></div>
+				<div class="lunbo">
+
+					<h1>轮播图</h1>
+					<p>复制一遍ul的内容，通过js求ul的宽度，图片的宽度，开始运动，运动结束给它拉到第一张图片</p>
+					<div id="box_a">
+						<a href="javascript:;" id="left">←</a>
+						<a href="javascript:;" id="right">→</a>
+						<ul id="ul_a">
+							<li><img src="img/img2/0.jpg"></li>
+							<li><img src="img/img2/1.jpg"></li>
+							<li><img src="img/img2/2.jpg"></li>
+							<li><img src="img/img2/3.jpg"></li>
+						</ul>
+						<ol id="ol1">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					</div>
+
+				</div>
+				<div class="color_pic">
+
+				</div>
+				<div class="move-into" id="move_into">
+					<h1>移入移出效果</h1>
+					<p>布局转换,拖拽,碰撞检测,拖动的图片距离谁 最近，计算出最近的图片，相互调换位置</p>
+					<ul id="ull">
+						<li><img src="img/pic.yiru/1.jpg" /><span>美景1</span></li>
+						<li><img src="img/pic.yiru/2.jpg" /><span>美景2 </span></li>
+						<li><img src="img/pic.yiru/3.jpg" /><span>美景3</span></li>
+						<li><img src="img/pic.yiru/4.jpg" /><span>美景4</span></li>
+						<li><img src="img/pic.yiru/5.jpg" /><span>美景5</span></li>
+						<li><img src="img/pic.yiru/6.jpg" /><span>美景6</span></li>
+						<li><img src="img/pic.yiru/7.jpg" /><span>美景7</span></li>
+						<li><img src="img/pic.yiru/8.jpg" /><span>美景8</span></li>
+						<li><img src="img/pic.yiru/9.jpg" /><span>美景9</span></li>
+					</ul>
+				</div>
+				<div class="color_pic"></div>
+				<div class="block_move" id="block_move">
+					<h1>分块运动</h1>
+					<p>把图片按比例分成小的块，然后隐藏，通过定时器，让小块一个一个来显示</p>
+
+					<input type="button" value="点击下一页" id="btna">
+					<div id="block_move_a">
+					</div>
+
+				</div>
+
+				<div class="color_pic"></div>
+				<div class="lens">
+					<h1>放大镜</h1>
+					<p>准备两张尺寸大小不同，内容相同的图片，按比例进行缩放</p>
+					<div class="lens_a">
+						<div id="small">
+							<img src="img/1.jpg">
+							<span></span>
+						</div>
+						<div id="big">
+							<img src="img/2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="color_pic"></div>
+				<div class="move_m">
+					<h1>无缝滚动</h1>
+					<p>复制一遍ul的内容，通过js求ul的宽度，开定时器让图片滚动</p>
+					<div class="works" id="works_aa">
+						<a href="javasrcipt:;" id="prev"></a>
+						<a href="javascript:;" id="next"> </a>
+						<ul id="works_a" class="clearfix">
+							<li><img src="img/gundong/16.jpg" /></li>
+							<li><img src="img/gundong/17.jpg" /></li>
+							<li><img src="img/gundong/25.jpg" /></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<div class="footer_pic"></div>
+	</body>
+
+</html>
