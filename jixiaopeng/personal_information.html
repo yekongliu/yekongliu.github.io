@@ -21,7 +21,7 @@
 				line-height: 50px;
 				color: #000;
 				margin: 0 20px;
-				padding: 20px;
+				padding:20px;
 			}
 			
 			nav a:hover {
@@ -81,12 +81,17 @@
 				line-height: 80px;
 				font-size: 25px;
 				font-weight: bold;
+				text-shadow:10px 10px 10px #fff;
 			}
 			
-			.personal p,
+			
 			.motto p {
 				height: 50px;
 				line-height: 50px;
+				font-size:15px;
+				text-shadow:5px 5px 5px #fff;
+				color:#666;
+				
 			}
 			
 			.personal {
@@ -103,6 +108,7 @@
 			}
 			
 			.personal h1 {
+				color:#00f;
 				height: 100px;
 				line-height: 100px;
 				font-size: 35px;
@@ -112,8 +118,8 @@
 			
 			.personal p,
 			.personal span {
-				height: 50px;
-				line-height: 60px;
+				height: 80px;
+				line-height: 80px;
 				text-align: left;
 				font-size: 25px;
 				margin-left: 100px;
@@ -128,6 +134,7 @@
 			}
 			
 			.hobby h1 {
+				color:#00f;
 				height: 100px;
 				line-height: 100px;
 				text-align: center;
@@ -144,6 +151,7 @@
 			}
 			
 			.w_e h2 {
+				color:#00f;
 				font-size: 20px;
 				line-height: 100px;
 				height: 100px;
@@ -159,37 +167,91 @@
 			}
 			
 			.contact_me {
-				height: 400px;
+				height: 450px;
 				width: 70%;
 				margin: 50px auto;
 				background: #fff;
 			}
 			
 			.contact_me h1 {
+				color:#00f;
 				height: 100px;
 				line-height: 100px;
 				text-align: center;
 				font-size: 50px;
+				text-shadow:10px 10px 10px #DCC673;
 			}
 			
 			.contact_me p {
 				height: 100px;
-				line-height: 100px;
-				padding: 0 20px;
+				line-height: 120px;
+				padding: 0 0 0 50px;
 				font-size: 30px;
+				
 			}
 			
 			.contact_z {
 				height: 300px;
 				width: 100%
 			}
-			
+			.left i{font-weight:bold;
+			font-size: 30px;}
 			.left,
 			.right {
 				width: 50%;
 				height: 300px;
 			}
+			.right img{
+				width:300px;
+				height:250px;
+			}
+			.right h2{height:50px; padding-left:60px; line-height:50px; font-size:30px;
+			 font-weight:bold;}
+#icon {
+ 	position: fixed;
+ 	right: 10px;
+ 	bottom: 10px;
+ 	display: none;
+ 	border-radius: 50%;
+ 	width: 34px;
+ 	height: 34px;
+ }
 		</style>
+		<script>
+			window.onload=function(){
+				var oIcon=document.querySelector('#icon');
+				window.onscroll = function() {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                  
+			if (scrollTop > 700) {
+				oIcon.style.display = 'block';
+			} else {
+				oIcon.style.display = 'none';
+			}
+			}
+				
+				 
+				var timer;
+				oIcon.onclick = function() {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			var start = scrollTop;
+			var dis = 0 - start;
+			var count = Math.floor(1000 / 30);
+			var n = 0;
+			clearInterval(timer);
+			timer = setInterval(function() {
+				n++;
+				var a = n / count;
+				var cur = start + dis * a;
+				document.documentElement.scrollTop = document.body.scrollTop = cur;
+				if (n == count) {
+					clearInterval(timer);
+
+				}
+			}, 30)
+		}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -200,15 +262,15 @@
 			<a href="index.html">返回首页</a>
 		</nav>
 		<div class="hide1"></div>
-		<div class="hide2"></div>
+		
 		<header class="clearfix">
 			<div class="header_left"><img src="img/personal/person.jpg"></div>
 			<div class="header_right">
 				<div class="motto">
 					<h1>座右铭(my motto)</h1>
-					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
-					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
-					<p>奋斗是前进的动力，懒惰是后退的根源。。。。。。。。</p>
+					<p>只要你肯奋斗，没有什么是绝对不可能的。</p>
+					<p>摔倒了爬起来就好。</p>
+					<p>要让事情改变，先改变自己；要让事情变得更好，先让自己变得更强。</p>
 				</div>
 			</div>
 		</header>
@@ -234,15 +296,16 @@
 			<h1>contact me</h1>
 			<div class="contact_z">
 				<div class="left fl">
-					<p>tel:18294427876</p>
-					<p>QQ:1558948962</p>
-					<p>E-mail:1558948962@qq.com</p>
+					<p> <i>Tel:</i>18294427876</p>
+					<p><i>QQ:</i>1558948962</p>
+					<p><i>E-mail:</i>1558948962@qq.com</p>
 				</div>
-				<div class="right fl"><img src="img/html5/1.jpg" alt="" /></div>
+				<div class="right fl">
+					<h2>微信二维码</h2><img src="img/html5/1.jpg" alt="" /></div>
 			</div>
 			<p></p>
 		</section>
-
+      <img src="img/top_head.png" id="icon" />
 	</body>
 
 </html>

@@ -518,4 +518,36 @@ window.onload = function() {
 
 			
   })();
+  
+  (function(){
+  	var oIcon=document.querySelector('#icon');
+				window.onscroll = function() {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                  
+			if (scrollTop > 700) {
+				oIcon.style.display = 'block';
+			} else {
+				oIcon.style.display = 'none';
+			}
+			}	 
+			var timer;
+				oIcon.onclick = function() {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			var start = scrollTop;
+			var dis = 0 - start;
+			var count = Math.floor(1000 / 30);
+			var n = 0;
+			clearInterval(timer);
+			timer = setInterval(function() {
+				n++;
+				var a = n / count;
+				var cur = start + dis * a;
+				document.documentElement.scrollTop = document.body.scrollTop = cur;
+				if (n == count) {
+					clearInterval(timer);
+
+				}
+			}, 30)
+		}
+  })();
 }
